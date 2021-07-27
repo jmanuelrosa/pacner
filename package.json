@@ -1,0 +1,59 @@
+{
+  "name": "pacner",
+  "version": "1.0.0",
+  "description": "A toolkit to create, build and manage your projects",
+  "license": "MIT",
+  "private": true,
+  "main": "index.js",
+  "keywords": [
+    "package manager",
+    "project",
+    "manager",
+    "generate",
+    "generator",
+    "development",
+    "cli",
+    "scaffolding"
+  ],
+  "author": {
+    "name": "José Manuel Rosa Moncayo",
+    "email": "josemanuel.rosamoncayo@gmail.com"
+  },
+  "homepage": "https://github.com/jmanuelrosa/pacner#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmanuelrosa/pacner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jmanuelrosa/pacner/issues"
+  },
+  "engines": {
+    "node": ">= 14.17.3",
+    "npm": ">= 6.14.13",
+    "yarn": ">=1.22.10"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "files": [],
+  "scripts": {
+    "install": "lerna bootstrap --force-local --no-ci",
+    "prepare": "husky install",
+    "lint": "eslint . --ext .js,.md,.json",
+    "fix": "eslint --fix .",
+    "lint-staged": "lint-staged",
+    "release": "lerna publish",
+    "cleanup": "lerna run cleanup --parallel && yarn cache clean --force",
+    "assassin": "yarn cleanup && lerna clean --yes && rm -rf node_modules yarn.lock"
+  },
+  "dependencies": {
+    "eslint": "latest"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "husky": "latest",
+    "lerna": "latest",
+    "lint-staged": "latest"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "ignoreChanges": [
+        "**/CHANGELOG.md",
+        "**/node_modules/**",
+        "**/*.md"
+      ],
+      "conventionalCommits": true,
+      "createRelease": "github",
+      "message": "chore(release): %s"
+    }
+  }
+}

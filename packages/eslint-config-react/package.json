@@ -1,0 +1,81 @@
+{
+  "name": "@pacner/eslint-config-react",
+  "version": "0.0.2",
+  "description": "ESLint shareable config with vitamins for React development",
+  "license": "MIT",
+  "private": false,
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "pacner",
+    "javascript",
+    "styleguide",
+    "react"
+  ],
+  "author": {
+    "name": "José Manuel Rosa Moncayo",
+    "email": "josemanuel.rosamoncayo@gmail.com"
+  },
+  "homepage": "https://github.com/jmanuelrosa/pacner/packages/eslint-config-react#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmanuelrosa/pacner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jmanuelrosa/pacner/issues?q=is%3Aissue+label%eslint-config-react"
+  },
+  "engines": {
+    "node": ">= 14.17.3",
+    "npm": ">= 6.14.13",
+    "yarn": ">=1.22.10"
+  },
+  "files": [
+    "index.js",
+    "javascript.js",
+    "ts.js",
+    "rules"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .js,.json,.md",
+    "fix": "eslint . --fix --ext .js,.json,.md",
+    "rules:list": "eslint --config .eslintrc --print-config",
+    "rules:new": "eslint-find-rules --unused index.js",
+    "cleanup": "yarn cache clean --force"
+  },
+  "dependencies": {
+    "@pacner/eslint-config": "^0.4.0",
+    "eslint": "latest"
+  },
+  "devDependencies": {
+    "eslint-config-standard-jsx": "latest",
+    "eslint-config-standard-react": "latest",
+    "eslint-find-rules": "latest",
+    "eslint-plugin-cypress": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-unicorn": "latest"
+  },
+  "peerDependencies": {
+    "@pacner/eslint-config": "0.0.1",
+    "eslint": "latest",
+    "eslint-config-standard-jsx": "latest",
+    "eslint-config-standard-react": "latest",
+    "eslint-plugin-cypress": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-unicorn": "latest"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-cypress": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "f2029e2095f3e54ac8ffc724211ca0f7afc3601d"
+}
