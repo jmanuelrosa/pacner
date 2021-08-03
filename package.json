@@ -43,6 +43,7 @@
     "lint": "eslint . --ext .js,.md,.json",
     "fix": "eslint --fix .",
     "lint-staged": "lint-staged",
+    "release:old": "lerna publish --loglevel verbose,getChangelogConfig",
     "release": "releasy",
     "cleanup": "lerna run cleanup --parallel && yarn cache clean --force",
     "assassin": "yarn cleanup && lerna clean --yes && rm -rf node_modules yarn.lock"
