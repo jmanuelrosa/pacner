@@ -2,8 +2,8 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.md'],
-      processor: 'markdown/markdown',
       plugins: ['markdown'],
+      processor: 'markdown/markdown',
       rules: {
         'eol-last': ['off'],
         'no-undef': ['off'],

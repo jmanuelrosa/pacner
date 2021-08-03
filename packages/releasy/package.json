@@ -1,28 +1,31 @@
 {
-  "name": "@pacner/peers",
+  "name": "@pacner/releasy",
   "version": "0.0.1",
-  "description": "Install and manage all your peer dependencies",
+  "description": "Release your project to npm and github",
   "license": "MIT",
   "private": false,
   "main": "index.js",
+  "bin": {
+    "releasy": "./bin/cli.js"
+  },
   "type": "module",
   "keywords": [
     "pacner",
-    "peer",
-    "peers",
-    "dependencies"
+    "release",
+    "deploy",
+    "ci"
   ],
   "author": {
     "name": "José Manuel Rosa Moncayo",
     "email": "josemanuel.rosamoncayo@gmail.com"
   },
-  "homepage": "https://github.com/jmanuelrosa/pacner/packages/peers#readme",
+  "homepage": "https://github.com/jmanuelrosa/pacner/packages/releasy#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jmanuelrosa/pacner.git"
   },
   "bugs": {
-    "url": "https://github.com/jmanuelrosa/pacner/issues?q=is%3Aissue+label%peers"
+    "url": "https://github.com/jmanuelrosa/pacner/issues?q=is%3Aissue+label%releasy"
   },
   "engines": {
     "node": ">= 14.17.3",
@@ -30,18 +33,16 @@
     "yarn": ">=1.22.10"
   },
   "files": [
-    "bin/",
     "index.js"
   ],
   "scripts": {
     "lint": "eslint . --ext .js,.json,.md",
     "fix": "eslint . --fix --ext .js,.json,.md",
-    "rules:list": "eslint --config .eslintrc --print-config",
-    "rules:new": "eslint-find-rules --unused index.js",
     "cleanup": "yarn cache clean --force"
   },
   "dependencies": {
-    "@pacner/eslint-config": "^0.0.1"
+    "@pacner/eslint-config": "^0.0.1",
+    "conventional-recommended-bump": "latest"
   },
   "devDependencies": {
     "eslint": "latest",
@@ -53,8 +54,5 @@
     "eslint-plugin-react": "latest",
     "eslint-plugin-react-hooks": "latest",
     "eslint-plugin-unicorn": "latest"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
