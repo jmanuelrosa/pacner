@@ -1,6 +1,6 @@
 {
   "name": "@pacner/peers",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Install and manage all your peer dependencies",
   "license": "MIT",
   "private": false,
@@ -41,7 +41,7 @@
     "cleanup": "yarn cache clean --force"
   },
   "dependencies": {
-    "@pacner/eslint-config": "^0.0.1"
+    "@pacner/eslint-config": "^0.1.0"
   },
   "devDependencies": {
     "eslint": "latest",

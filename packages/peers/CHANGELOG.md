@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.1.0 (2021-08-05)
+
+
+### Features
+
+* add eslint and peers packages ([6c4d36e](https://github.com/jmanuelrosa/pacner/commit/6c4d36e27e589ce4517cb164784ae0ed19801cb8))
+* test ([7191633](https://github.com/jmanuelrosa/pacner/commit/7191633d448872ddc27effdd3bcd16f47055662e))
+
+
+
+
+
 ## [0.0.2](https://github.com/jmanuelrosa/pacner/compare/@pacner/peers@0.0.1...@pacner/peers@0.0.2) (2021-08-02)
 
 **Note:** Version bump only for package @pacner/peers

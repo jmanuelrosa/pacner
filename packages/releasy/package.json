@@ -1,6 +1,6 @@
 {
   "name": "@pacner/releasy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Release your project to npm and github",
   "license": "MIT",
   "private": false,
@@ -41,7 +41,7 @@
     "cleanup": "yarn cache clean --force"
   },
   "dependencies": {
-    "@pacner/eslint-config": "^0.0.1",
+    "@pacner/eslint-config": "^0.1.0",
     "conventional-recommended-bump": "latest"
   },
   "devDependencies": {
