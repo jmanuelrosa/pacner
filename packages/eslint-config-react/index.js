@@ -6,3 +6,5 @@ module.exports = {
     './rules/cypress'
   ].map((element) => require.resolve(element))
 }
+
+console.log('NEW version')
