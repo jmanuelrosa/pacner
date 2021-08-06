@@ -1,6 +1,6 @@
 {
   "name": "@pacner/releasy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Release your project to npm and github",
   "license": "MIT",
   "private": false,

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/jmanuelrosa/pacner/compare/@pacner/releasy@0.1.0...@pacner/releasy@0.2.0) (2021-08-06)
+
+
+### Features
+
+* new! ([9edaff1](https://github.com/jmanuelrosa/pacner/commit/9edaff1b0031355e41f23c96a78c1de72f910ead))
+
+
+### BREAKING CHANGES
+
+* yes!
+
+
+
+
+
 # 0.1.0 (2021-08-05)
 
 
