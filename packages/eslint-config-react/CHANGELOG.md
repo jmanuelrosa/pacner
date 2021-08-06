@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/jmanuelrosa/pacner/compare/@pacner/eslint-config-react@0.1.0...@pacner/eslint-config-react@0.2.0) (2021-08-06)
+
+
+### Features
+
+* new version ([a33b99a](https://github.com/jmanuelrosa/pacner/commit/a33b99a43f1a4665f303b88f1c8ec28021903019))
+* new! ([9edaff1](https://github.com/jmanuelrosa/pacner/commit/9edaff1b0031355e41f23c96a78c1de72f910ead))
+
+
+### BREAKING CHANGES
+
+* yes!
+* bump!
+
+
+
+
+
 # 0.1.0 (2021-08-05)
 
 

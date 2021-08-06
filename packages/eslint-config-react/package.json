@@ -1,6 +1,6 @@
 {
   "name": "@pacner/eslint-config-react",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ESLint shareable config with vitamins for React development",
   "license": "MIT",
   "private": false,

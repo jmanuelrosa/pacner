@@ -1,17 +1,29 @@
-import bump from 'conventional-recommended-bump'
+// import bump from 'conventional-recommended-bump'
+import { help } from './commands/help.js'
 
-export function cli () {
-  const pkg = 'peers'
-  const path = `/home/jmanuelrosa/Developer/personal/pacner/packages/${pkg}`
+import { latestsTags } from './lib/getTags.js'
 
-  bump({
-    preset: 'conventionalcommits',
-    path: path,
-    lernaPackage: `@pacner/${pkg}`,
-  }, (error, recommendation) => {
-    console.log(recommendation.releaseType);
-  });
+export function cli ({ package: pkg }) {
+  if (pkg) {
+    console.log('[DEBUG] ~ pkg', pkg)
+  }
+
+  const tags = latestsTags()
+  console.log('[DEBUG] ~ tags', tags)
 }
+
+// export function cli () {
+//   const pkg = 'peers'
+//   const path = `/home/jmanuelrosa/Developer/personal/pacner/packages/${pkg}`
+
+//   bump({
+//     preset: 'conventionalcommits',
+//     path: path,
+//     lernaPackage: `@pacner/${pkg}`,
+//   }, (error, recommendation) => {
+//     console.log(recommendation.releaseType);
+//   });
+// }
 
 
 // import { analyzeCommits } from '@semantic-release/commit-analyzer'

@@ -1,6 +1,6 @@
 {
   "name": "@pacner/releasy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Release your project to npm and github",
   "license": "MIT",
   "private": false,
@@ -57,7 +57,9 @@
     "eslint-plugin-react-hooks": "latest",
     "eslint-plugin-unicorn": "latest",
     "git-raw-commits": "^2.0.10",
-    "git-semver-tags": "^4.1.1"
+    "git-semver-tags": "^4.1.1",
+    "minimist": "^1.2.5",
+    "minimist-options": "^4.1.0"
   },
   "publishConfig": {
     "access": "public"
