@@ -7,4 +7,4 @@ module.exports = {
   ].map((element) => require.resolve(element))
 }
 
-console.log('NEW version')
+console.log('NEW version!')
